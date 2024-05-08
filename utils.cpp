@@ -16,13 +16,6 @@ void wifiConnect(const char* ssid, const char* password) {
       Serial.print(".");
     }
   }
-  // Development
-  // if (WiFi.status() == WL_CONNECTED) {
-  // Serial.println("WiFi Connected");
-  // Serial.print("IP : ");
-  // Serial.print(WiFi.localIP().toString());
-  // Serial.println("");
-  // }
 }
 
 void loading(SmoothProgressBar spb,LiquidCrystal_I2C lcd,int maxLoading) {
