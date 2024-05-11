@@ -35,6 +35,8 @@ void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(buttonPin, INPUT);
   pinMode(echoPin, INPUT);
+  // Optional for set servo to degree 0
+  servo.write(0);
   servo.attach(servoPin);
   Serial.begin(9600);
   lcd.init();
