@@ -81,7 +81,7 @@ void modeOFF(float percentage) {
 void modeON(float percentage) {
   Blynk.run();
   if (percentage < 15) {
-    Blynk.logEvent("alert","Pakan Hampir Habis Mohon Disi Ulang");
+    Blynk.logEvent("alert","Pakan Hampir Habis Mohon Diisi Ulang");
   } 
   Blynk.virtualWrite(V1,percentage);
   modeOFF(percentage);
