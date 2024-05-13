@@ -73,6 +73,7 @@ if (WiFi.status() == WL_CONNECTED) {
 void modeOFF(float percentage) {
   if (digitalRead(buttonPin) == LOW ){
       servoOnOff(servo,lcd);
+      return;
   } else {
       printPercentageFeed(spb,lcd,percentage);
   }
